@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="IoT DNS Platform">
+    <meta name="keywords" content="iot,dns,octoblu,id">
+    <meta name="author" content="Octoblu">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <title>ID-IOT</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="page-home">
+
+  	<!-- begin:navbar -->
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand menus" href="#page-home">ID-IOT.ORG</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden"><a href="#page-home"></a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#whois">Whois</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  	<!-- end:navbar -->
+
+  	<!-- begin:header -->
+  	<div id="header" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url('img/matrixmap.jpg');">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="slider-caption">
+        					<h2 class="animated fadeInLeftBig">50 Billion Devices Online</h2>
+        					<div class="animated fadeInDownBig">
+                    <p>How will you remember your IoT device IDs? <br />Register your own IoT ID today!</p>
+                    <div class="marg30-top-btm"><a href="#register" class="btn btn-lucky btn-xl">Register</a></div>
+                  </div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+       </div>
+     </div>
+  	<!-- end:header -->
+
+  	<!-- begin:register -->
+  	<div id="register">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-12">
+  					<div class="page-title">
+  						<h2>Register your IoT ID</h2>
+            </div>
+            <center>              
+              <h3>
+                We alias your <a href="http://developer.octoblu.com"><img src="img/octoblu.png" width="140px" /></a> user UUID and your connected devices with a unique IoT domain space.  
+              </h3>
+              <h3>
+                For example, <strong>826a4881-49b1-11e4-8cb0-e39bb5998b1d</strong> could become <strong>~chris</strong>!
+              </h3>
+              <h3> 
+                Your <strong>Phillips Hue</strong> could become <strong>~chris.hue</strong>.
+              </h3>
+            </center>              
+            <br />
+            <center>
+              <form class="form-inline" role="form">
+                <div class="form-group ">
+                  <br />
+                  <input class="form-control input-lg" type="text" name="uuid" placeholder="Octoblu UUID"> &nbsp;
+                  <span class="register-icon"><i class="fa fa-arrows-h"></i><span>
+                  &nbsp;
+                  <div class="input-group">
+                    <div class="input-group-addon">~</div>
+                    <input class="form-control input-lg" type="text" name="idiot" placeholder="Desired IoT ID">
+                  </div>                    
+                </div>                  
+              </form>
+              <br /><br />
+              <button id="registerbutton" class="input-lg btn btn-lucky"><i class="fa fa-globe"></i> Register</button>
+              <br /><br />
+              <div class="registerresult"></div>
+
+            </center>
+  				</div>
+  			</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- end:register -->
+
+  	<!-- begin:whois -->
+  	<div id="whois">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-12">
+  					<div class="page-title">
+  						<h2>Whois IoT ID Lookup</h2>
+  					</div>
+  				</div>
+  			</div>
+  			<!-- break -->
+  			<div class="row">
+  				<div class="col-md-12">
+
+            <center>
+              <form class="form-inline" role="form" action="#">
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon">~</div>
+                    <input class="form-control input-lg" type="text" name="whois" placeholder="IoT ID">
+                  </div>                    
+                </div>                  
+                <div id="whoisbutton" class="btn btn-lucky input-lg"><i class="fa fa-globe"></i> Lookup</div>
+              </form>
+              <br /><br />
+              <div class="whoisresult"></div>
+            </center>
+
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- end:whois -->
+
+
+    <!-- begin:promo -->
+    <div id="contact" class="promo-02" style="background-image: url('img/socialnetworks.png');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="promo-text">
+              <div class="page-title">
+                <h2 class="text-uppercase">Follow us on the Internets</small></h2>
+              </div>
+              <!-- <h3>Let's Introduce Now!</h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:promo -->
+
+    <!-- begin:social -->
+    <div id="social">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-inline social-icon">
+              <li><a href="https://github.com/octoblu"><i class="fa fa-github"></i></a></li>
+              <li><a href="http://twitter.com/octoblu"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="http://facebook.com/octoblu"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/3745577"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <h3>Support is available on IRC at irc.freenode.net / #skynetim</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:social -->
+
+    <!-- begin:footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="footer-widget-logo">
+              <h2>
+                <img src="img/octoblu.png" width="300px" />
+              </h2>
+              <small>Open Source Internet of Things Platform</small>
+            </div>
+          </div>
+          <!-- break -->
+          <div class="col-md-8">
+            <p>Octoblu is a pioneer in real-time connections and communications management across systems, people and physical devices. The company is a member of the AllSeen Alliance, a nonprofit open source consortium dedicated to driving the widespread adoption of products, systems and registers that support the Internet of Everything. Octoblu was founded in 2014 and is headquartered in Palo Alto, California.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:footer -->
+
+    <!-- begin:copyright -->
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a class="btn btn-lucky menus text-center btn-totop" href="#page-home"><i class="fa fa-angle-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:copyright -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="js/gmap3.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      $("#whoisbutton").click(function() {
+        $( ".whoisresult" ).html();
+        $.get( "http://meshblu.octoblu.com/status", function( data ) {
+          console.log("result", data);
+          $( ".whoisresult" ).html( JSON.stringify(data) );
+        });
+      });
+
+      $("#registerbutton").click(function() {
+        $.get( "http://meshblu.octoblu.com/status", function( data ) {
+          $( ".registerresult" ).html();
+          console.log("result", data);
+          $( ".registerresult" ).html( JSON.stringify(data) );
+        });
+      });
+
+
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-2483685-29', 'skynet.im');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
