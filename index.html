@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="IoT DNS Platform">
-    <meta name="keywords" content="iot,dns,octoblu,id">
+    <meta name="description" content="Gateblu - Octoblu's IoT Gateway">
+    <meta name="keywords" content="iot,gateway,octoblu">
     <meta name="author" content="Octoblu">
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
-    <title>ID-IOT</title>
+    <title>Gateblu Gateway</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,15 +41,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand menus" href="#page-home">ID-IOT.ORG</a>
+          <a class="navbar-brand menus" href="#page-home">
+            <img src="img/octoblu.png" width="125px" />
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li class="hidden"><a href="#page-home"></a></li>
-            <li><a href="#register">Register</a></li>
-            <li><a href="#whois">Whois</a></li>
+            <li><a href="#docs">Docs</a></li>
+            <li><a href="#examples">Examples</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -59,99 +62,148 @@
   	<!-- begin:header -->
   	<div id="header" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
-        <div class="item active" style="background-image: url('img/matrixmap.jpg');">
+        <div class="item active" style="background-image: url('img/connect.jpg');">
         	<div class="container">
         		<div class="row">
         			<div class="col-md-12">
         				<div class="slider-caption">
-        					<h2 class="animated fadeInLeftBig">50 Billion Devices Online</h2>
+        					<h2 class="animated fadeInLeftBig">Gateblu</h2>
         					<div class="animated fadeInDownBig">
-                    <p>How will you remember your IoT device IDs? <br />Register your own IoT ID today!</p>
-                    <div class="marg30-top-btm"><a href="#register" class="btn btn-lucky btn-xl">Register</a></div>
+                    <p>Octoblu's IoT Gateway <br />Connect Everything to Everything!</p>
+                    <div class="marg30-top-btm"><a href="#" class="btn btn-lucky btn-xl">Download</a></div>
                   </div>
         				</div>
         			</div>
         		</div>
         	</div>
-        </div>
+        </div>        
        </div>
+
+      <div><center>
+      <img src="https://ds78apnml6was.cloudfront.net/device/hue.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/arduino.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/insteon.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/raspberrypi.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/wemo.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/galileo.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/blink1.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/bean.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/beaglebone.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/tessel.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/pinoccio.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/channel/nest.svg" width="100px" height="100px"/>
+      <img src="https://ds78apnml6was.cloudfront.net/device/generic.svg" width="100px" height="100px"/>
+      </center></div>
+
      </div>
   	<!-- end:header -->
 
+
   	<!-- begin:register -->
-  	<div id="register">
+  	<div id="docs">
   		<div class="container">
   			<div class="row">
   				<div class="col-lg-12">
   					<div class="page-title">
-  						<h2>Register your IoT ID</h2>
+  						<h2>Gateblu Docs</h2>
             </div>
-            <center>              
-              <h3>
-                We alias your <a href="http://developer.octoblu.com"><img src="img/octoblu.png" width="140px" /></a> user UUID and your connected devices with a unique IoT domain space.  
-              </h3>
-              <h3>
-                For example, <strong>826a4881-49b1-11e4-8cb0-e39bb5998b1d</strong> could become <strong>~chris</strong>!
-              </h3>
-              <h3> 
-                Your <strong>Phillips Hue</strong> could become <strong>~chris.hue</strong>.
-              </h3>
-            </center>              
+            <h3>
+              Gateblu allows you to connect smart devices, motors, servos, sensors, and additional protocols to <a href="http://developer.octoblu.com">Meshblu</a> and <a href="http://octoblu.com">Octoblu</a>!  
+            </h3>
             <br />
-            <center>
-              <form class="form-inline" role="form">
-                <div class="form-group ">
-                  <br />
-                  <input class="form-control input-lg" type="text" name="uuid" placeholder="Octoblu UUID"> &nbsp;
-                  <span class="register-icon"><i class="fa fa-arrows-h"></i><span>
-                  &nbsp;
-                  <div class="input-group">
-                    <div class="input-group-addon">~</div>
-                    <input class="form-control input-lg" type="text" name="idiot" placeholder="Desired IoT ID">
-                  </div>                    
-                </div>                  
-              </form>
-              <br /><br />
-              <button id="registerbutton" class="input-lg btn btn-lucky"><i class="fa fa-globe"></i> Register</button>
-              <br /><br />
-              <div class="registerresult"></div>
-
-            </center>
   				</div>
   			</div>
-  			</div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Home Automation</h3>
+              <p>Gateblu supports Phillips Hue, LiFX, and Blink1 LED lighting as well as Belkin Wemo and Insteon outlets and switches. Additional smart devices are being added on a regular basis!</p>
+              <span class="docs-icon"> <i class="fa fa-lightbulb-o"></i></span>
+            </div>
+          </div>  
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Industrial Sensors</h3>
+              <p>Gateblu connects analog and digital sensors to Meshblu and Octoblu. Our open plugin architecture allows you to easily query or stream any sensor data in realtime.</p>
+              <span class="docs-icon"> <i class="fa fa-tachometer"></i></span>
+            </div>
+          </div>  
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Legacy Connectors</h3>
+              <p>Gateblu bridges legacy and proprietary protocols such as serial, RF, and IR communications to Meshblu and Octoblu allowing you to connect anything to our IoT platform!</p>
+              <span class="docs-icon"> <i class="fa fa-share-alt"></i></span>
+            </div>
+          </div>  
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>IoT Protocols</h3>
+              <p>Gateblu connets AllJoyn from the AllSeen Alliance and other IoT protocols to Meshblu and Octoblu via HTTP, WebSockets, MQTT, and CoAP!</p>
+              <span class="docs-icon"> <i class="fa fa-asterisk"></i></span>
+            </div>
+          </div>  
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Robots</h3>
+              <p>Gateblu connects Nodebots, robots, drones, motors, servos, etc to Meshblu and Octoblu with bi-directional, realtime control!</p>
+              <span class="docs-icon"> <i class="fa fa-bug"></i></span>
+            </div>
+          </div>  
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Servers & Cloud Ops</h3>
+              <p>Gateblu connects servers, clouds, logfiles, cameras, speakers, etc to Meshblu and Octoblu with realtime event streaming, presence, and subscriptions!</p>
+              <span class="docs-icon"> <i class="fa fa-hdd-o"></i></span>
+            </div>
+          </div>  
+        </div>
+
+
   		</div>
   	</div>
   	<!-- end:register -->
 
+    <!-- begin:promo -->
+    <div class="promo" style="background-image: url('img/moheeb.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="promo-text">
+              <div class="page-title">
+                <h2 class="text-uppercase">Download / Clone / Fork <small>and contribute to our open source Internet of Things platform</small> </h2>
+              </div>
+              <div class="marg30-top-btm">
+                <a href="https://github.com/octoblu/meshblu" class="btn btn-lucky btn-xl"><i class="fa fa-github"></i> Meshblu</a>
+                <a href="https://github.com/octoblu/gateblu" class="btn btn-lucky btn-xl"><i class="fa fa-github"></i> Gateblu</a>
+                <a href="https://github.com/octoblu/microblu_mqtt" class="btn btn-lucky btn-xl"><i class="fa fa-github"></i> Microblu</a>
+              </div>
+              <!-- <h3>Let's Introduce Now!</h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:promo -->
+
   	<!-- begin:whois -->
-  	<div id="whois">
+  	<div id="examples">
   		<div class="container">
   			<div class="row">
   				<div class="col-md-12">
   					<div class="page-title">
-  						<h2>Whois IoT ID Lookup</h2>
+  						<h2>Examples</h2>
   					</div>
-  				</div>
-  			</div>
-  			<!-- break -->
-  			<div class="row">
-  				<div class="col-md-12">
-
-            <center>
-              <form class="form-inline" role="form" action="#">
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-addon">~</div>
-                    <input class="form-control input-lg" type="text" name="whois" placeholder="IoT ID">
-                  </div>                    
-                </div>                  
-                <div id="whoisbutton" class="btn btn-lucky input-lg"><i class="fa fa-globe"></i> Lookup</div>
-              </form>
-              <br /><br />
-              <div class="whoisresult"></div>
-            </center>
-
+            <h3>
+              Gateblu is 100% open source has an open plugin architecture for connecting local devices and sensors to private and public <a href="http://developer.octoblu.com">Meshblu</a> IoT clouds.
+            </h3> 
   				</div>
   			</div>
   		</div>
@@ -201,7 +253,7 @@
           <div class="col-md-4 col-sm-12 col-xs-12">
             <div class="footer-widget-logo">
               <h2>
-                <img src="img/octoblu.png" width="300px" />
+                <a href="http://developer.octoblu.com"><img src="img/octoblu.png" width="300px" /></a>
               </h2>
               <small>Open Source Internet of Things Platform</small>
             </div>
@@ -239,6 +291,7 @@
     <script src="js/cbpAnimatedHeader.js"></script>
     <script src="js/jquery.parallax.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
 
     <script>
       $("#whoisbutton").click(function() {
@@ -256,8 +309,6 @@
           $( ".registerresult" ).html( JSON.stringify(data) );
         });
       });
-
-
     </script>
 
     <script>
