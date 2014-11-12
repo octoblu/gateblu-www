@@ -51,6 +51,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="hidden"><a href="#page-home"></a></li>
             <li><a href="#docs">Gateblu Docs</a></li>
+            <li><a href="#headless">Headless</a></li>
+            <li><a href="#headless">Library</a></li>
             <li><a href="#examples">Examples</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -209,6 +211,62 @@
       </div>
     </div>
     <!-- end:promo -->
+
+    <!-- begin:whois -->
+    <div id="headless">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title">
+              <h2>Headless</h2>
+            </div>
+            <h3>
+              Gateblu can be run in a headless mode as well as with the GUI. To learn more about it, visit <a href="https://github.com/octoblu/gateblu">Gateblu</a>.
+            </h3>
+            <p>Here's an example running Gateblu headless</p>
+            <pre><code class="language-javascript">
+git clone https://github.com/octoblu/gateblu
+npm start
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:whois -->
+
+    <!-- begin:whois -->
+    <div id="library">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title">
+              <h2>Library</h2>
+            </div>
+            <h3>
+              Gateblu can also be used as a library and integrated into your project. To see how we integrate it into the GUI, look at <a href="https://github.com/octoblu/gateblu-ui/blob/master/src/services/gateblu-service.coffee">gateblu-service.coffee</a>.
+            </h3>
+            <p>Here's an example of adding gateblu into a node application.</p>
+            <pre><code class="language-javascript">
+Gateblu = require('gateblu');
+
+gateblu = new Gateblu(config);
+
+process.on('uncaughtException', (function(error) {
+  console.error('uncaughtException');
+  console.error(error.message);
+  console.error(error.stack);
+  return gateblu.cleanup();
+});
+
+gateblu.on('gateblu:config', (function(config) {
+  console.log('Got updated config:', config);
+});
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:whois -->
 
   	<!-- begin:whois -->
   	<div id="examples">
