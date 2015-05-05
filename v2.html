@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gateblu - Octoblu's IoT Gateway">
+    <meta name="keywords" content="iot,gateway,octoblu">
+    <meta name="author" content="Octoblu">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <title>Gateblu Gateway</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,600" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="page-home">
+
+  	<!-- begin:navbar -->
+  	<nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand menus" href="#page-home">
+            <img src="img/octoblu.png" width="125px" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden"><a href="#page-home"></a></li>
+            <li><a href="#docs">Gateblu Docs</a></li>
+            <li><a href="#headless">Headless</a></li>
+            <li><a href="#headless">Library</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  	<!-- end:navbar -->
+
+  	<!-- begin:header -->
+  	<div id="header" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url('img/connect.jpg');">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="slider-caption">
+        					<h2 class="animated fadeInLeftBig">Gateblu</h2>
+        					<div class="animated fadeInDownBig download-section">
+                    <p>Octoblu's IoT Gateway <br />Connect Everything to Everything!</p>
+                    <br>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-md-3">
+                        <a href="https://s3-us-west-2.amazonaws.com/gateblu/gateblu-ui/latest/gateblu-win32-ia32.zip">
+                          <div class="download-option">
+                            <i class="fa fa-4x fa-windows"></i><br>
+                            Windows Installer (32-bit)<br>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                        <a href="https://s3-us-west-2.amazonaws.com/gateblu/gateblu-ui/latest/gateblu-win32-x64.zip">
+                          <div class="download-option">
+                            <i class="fa fa-4x fa-windows"></i><br>
+                            Windows Installer (64-bit)<br>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                        <a href="https://s3-us-west-2.amazonaws.com/gateblu/gateblu-ui/latest/Gateblu.dmg">
+                          <div class="download-option">
+                            <i class="fa fa-4x fa-apple"></i><br>
+                            Macintosh Installer (Universal)<br>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                        <a href="https://s3-us-west-2.amazonaws.com/gateblu/gateblu-ui/latest/gateblu-linux-ia32.zip">
+                          <div class="download-option">
+                            <i class="fa fa-4x fa-tasks"></i><br>
+                            Linux Installer (32-bit)<br>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-xs-12 col-md-3">
+                        <a href="https://s3-us-west-2.amazonaws.com/gateblu/gateblu-ui/latest/gateblu-linux-x64.zip">
+                          <div class="download-option">
+                            <i class="fa fa-4x fa-tasks"></i><br>
+                            Linux Installer (64-bit)<br>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+     <!-- end:header -->
+
+  	<!-- begin:register -->
+  	<div id="docs">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-12">
+  					<div class="page-title">
+  						<h2>Gateblu Docs</h2>
+            </div>
+            <h3>
+              Gateblu allows you to connect smart devices, motors, servos, sensors, and additional protocols to <a href="http://developer.octoblu.com">Meshblu</a> and <a href="http://octoblu.com">Octoblu</a>!
+            </h3>
+            <br />
+  				</div>
+  			</div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Home Automation</h3>
+              <p>Gateblu supports Phillips Hue, LiFX, and Blink1 LED lighting as well as Belkin Wemo and Insteon outlets and switches. Additional smart devices are being added on a regular basis!</p>
+              <span class="docs-icon"> <i class="fa fa-lightbulb-o"></i></span>
+            </div>
+          </div>
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Industrial Sensors</h3>
+              <p>Gateblu connects analog and digital sensors to Meshblu and Octoblu. Our open plugin architecture allows you to easily query or stream any sensor data in realtime.</p>
+              <span class="docs-icon"> <i class="fa fa-tachometer"></i></span>
+            </div>
+          </div>
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Legacy Connectors</h3>
+              <p>Gateblu bridges legacy and proprietary protocols such as serial, RF, and IR communications to Meshblu and Octoblu allowing you to connect anything to our IoT platform!</p>
+              <span class="docs-icon"> <i class="fa fa-share-alt"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>IoT Protocols</h3>
+              <p>Gateblu connects AllJoyn from the AllSeen Alliance and other IoT protocols to Meshblu and Octoblu via HTTP, WebSockets, MQTT, and CoAP!</p>
+              <span class="docs-icon"> <i class="fa fa-asterisk"></i></span>
+            </div>
+          </div>
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Robots</h3>
+              <p>Gateblu connects Nodebots, robots, drones, motors, servos, etc to Meshblu and Octoblu with bi-directional, realtime control!</p>
+              <span class="docs-icon"> <i class="fa fa-bug"></i></span>
+            </div>
+          </div>
+          <!-- break -->
+          <div class="col-md-4 col-sm-4">
+            <div class="docs-content">
+              <h3>Servers & Cloud Ops</h3>
+              <p>Gateblu connects servers, clouds, logfiles, cameras, speakers, etc to Meshblu and Octoblu with realtime event streaming, presence, and subscriptions!</p>
+              <span class="docs-icon"> <i class="fa fa-hdd-o"></i></span>
+            </div>
+          </div>
+        </div>
+
+
+  		</div>
+  	</div>
+  	<!-- end:register -->
+
+    <!-- begin:promo -->
+    <div class="promo" style="background-image: url('img/moheeb.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="promo-text">
+              <div class="page-title">
+                <h2 class="text-uppercase">Download / Clone / Fork <small>and contribute to our open source Internet of Things platform</small> </h2>
+              </div>
+              <div class="marg30-top-btm">
+                <a href="https://github.com/octoblu/meshblu" class="btn btn-lucky btn-xl"><i class="fa fa-github"></i> Meshblu</a>
+                <a href="https://github.com/octoblu/gateblu" class="btn btn-lucky btn-xl"><i class="fa fa-github"></i> Gateblu</a>
+                <a href="https://github.com/octoblu/microblu_mqtt" class="btn btn-lucky btn-xl"><i class="fa fa-github"></i> Microblu</a>
+              </div>
+              <!-- <h3>Let's Introduce Now!</h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:promo -->
+
+    <!-- begin:whois -->
+    <div id="headless">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title">
+              <h2>Headless</h2>
+            </div>
+            <h3>
+              Gateblu can be run in a headless mode as well as with the GUI. To learn more about it, visit <a href="https://github.com/octoblu/gateblu">Gateblu</a>.
+            </h3>
+            <p>Here's an example running Gateblu headless</p>
+            <pre><code class="language-javascript">
+git clone https://github.com/octoblu/gateblu
+npm start
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:whois -->
+
+    <!-- begin:whois -->
+    <div id="library">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title">
+              <h2>Library</h2>
+            </div>
+            <h3>
+              Gateblu can also be used as a library and integrated into your project. To see how we integrate it into the GUI, look at <a href="https://github.com/octoblu/gateblu-ui/blob/master/src/services/gateblu-service.coffee">gateblu-service.coffee</a>.
+            </h3>
+            <p>Here's an example of adding gateblu into a node application.</p>
+            <pre><code class="language-javascript">
+Gateblu = require('gateblu');
+
+gateblu = new Gateblu(config);
+
+process.on('uncaughtException', (function(error) {
+  console.error('uncaughtException');
+  console.error(error.message);
+  console.error(error.stack);
+  return gateblu.cleanup();
+});
+
+gateblu.on('gateblu:config', (function(config) {
+  console.log('Got updated config:', config);
+});
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:whois -->
+
+  	<!-- begin:whois -->
+  	<div id="examples">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-12">
+  					<div class="page-title">
+  						<h2>Examples</h2>
+  					</div>
+            <h3>
+              Our Gateblu gateway is 100% open source and has an open plugin architecture for connecting local devices and sensors to private and public <a href="http://developer.octoblu.com">Meshblu</a> IoT clouds.
+            </h3>
+            <p>Here's an example of our Blink1 plugin</p>
+            <pre><code class="language-javascript">
+'use strict';
+
+var Blink1    = require('node-blink1');
+var tinycolor = require('tinycolor2');
+
+var MESSAGE_SCHEMA = {
+  type: 'object',
+  properties: {
+    on: {
+      type: 'boolean',
+      required: true
+    },
+    color: {
+      type: 'string',
+      required: true
+    }
+  }
+};
+
+function Plugin(){
+  this.messageSchema = MESSAGE_SCHEMA;
+  this.optionsSchema = {};
+  this.options = {};
+}
+
+var parseColor = function(on, color){
+  if(!on){
+    return tinycolor('black');
+  }
+
+  if(!color){
+    return tinycolor('white');
+  }
+
+  return tinycolor(decodeURIComponent(color));
+};
+
+Plugin.prototype.onMessage = function(data){
+  try{
+    var payload, color, rgb, blink1;
+    payload = data.payload || data.message || {};
+
+    color = parseColor(payload.on, payload.color);
+    rgb = tinycolor(color).toRgb();
+
+    blink1 = new Blink1();
+    blink1.fadeToRGB(0, rgb.r, rgb.g, rgb.b);
+    blink1.close();
+  } catch (error) {
+    if(error.message){
+      console.error(error.message);
+      console.error(error.stack);
+    } else {
+      console.error(error);
+    }
+    throw error;
+  }
+};
+
+module.exports = {
+  Plugin: Plugin,
+  messageSchema: MESSAGE_SCHEMA
+};
+            </code></pre>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- end:whois -->
+
+
+    <!-- begin:promo -->
+    <div id="contact" class="promo-02" style="background-image: url('img/socialnetworks.png');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="promo-text">
+              <div class="page-title">
+                <h2 class="text-uppercase">Follow us on the Internets</small></h2>
+              </div>
+              <!-- <h3>Let's Introduce Now!</h3> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:promo -->
+
+    <!-- begin:social -->
+    <div id="social">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-inline social-icon">
+              <li><a href="https://github.com/octoblu"><i class="fa fa-github"></i></a></li>
+              <li><a href="http://twitter.com/octoblu"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="http://facebook.com/octoblu"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/3745577"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <h3>Support is available on IRC at irc.freenode.net / #skynetim</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:social -->
+
+    <!-- begin:footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="footer-widget-logo">
+              <h2>
+                <a href="http://developer.octoblu.com"><img src="img/octoblu.png" width="300px" /></a>
+              </h2>
+              <small>Open Source Internet of Things Platform</small>
+            </div>
+          </div>
+          <!-- break -->
+          <div class="col-md-8">
+            <p>Octoblu is a pioneer in real-time connections and communications management across systems, people and physical devices. The company is a member of the AllSeen Alliance, a nonprofit open source consortium dedicated to driving the widespread adoption of products, systems and registers that support the Internet of Everything. Octoblu was founded in 2014 and is headquartered in Palo Alto, California.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:footer -->
+
+    <!-- begin:copyright -->
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a class="btn btn-lucky menus text-center btn-totop" href="#page-home"><i class="fa fa-angle-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end:copyright -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="js/gmap3.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+
+    <script>
+      $("#whoisbutton").click(function() {
+        $( ".whoisresult" ).html();
+        $.get( "http://meshblu.octoblu.com/status", function( data ) {
+          console.log("result", data);
+          $( ".whoisresult" ).html( JSON.stringify(data) );
+        });
+      });
+
+      $("#registerbutton").click(function() {
+        $.get( "http://meshblu.octoblu.com/status", function( data ) {
+          $( ".registerresult" ).html();
+          console.log("result", data);
+          $( ".registerresult" ).html( JSON.stringify(data) );
+        });
+      });
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-60006262-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
